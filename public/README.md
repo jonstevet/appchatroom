@@ -1,70 +1,95 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="left">
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- About the Project -->
+## :star2: Acerca del projecto
 
-### `npm start`
+<!-- TechStack -->
+### :space_invader: Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<details>
+  <summary>Tecnologías usadas</summary>
+  <ul>
+       <li>Typescript</li>
+       <li>Express</li>
+       <li>Node.js</li>
+       <li>React</li>
+       <li>Axios</li>
+       <li>Socket.io</li>
+       <li>MongoDB</li>
+  </ul>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- Features -->
+### :dart: Características
 
-### `npm test`
+Escenario
+Parte I
+Se pide realizar un programa de chat que permite que dos usuarios puedan realizar una
+conversación mediante el envío de mensajes utilizando la librería Socket.IO para NODE JS.
+Al iniciar el programa debe solicitar al usuario un Nick o alias para ser identificado y poder
+ser agregado a una lista de usuarios conectados.
+Luego del ingreso del Nick o alias de usuario el programa debe presentar en pantalla
+dividida usuarios conectados (lado izquierdo de la pantalla) y mensajes enviados y recibidos
+(lado derecho de la pantalla) como así también una caja de texto que permita el intercambio
+de mensajes entre los usuarios.
+En el lado izquierdo tal como se comentó anteriormente se debe listar los usuarios
+conectados al sitio de chat, permitiendo así que el usuario logueado pueda seleccionar
+haciendo click en el Nick de la persona que quiera comenzar a chatear.
+Parte II
+● Mostrar una alerta visual si un usuario me envía un mensaje por ejemplo en la lista
+de usuario conectado en el Nick de usuario que me envía el mensaje poner la
+leyenda (NUEVO MENSAJE).
+● Mostrar los mensajes con colores distintos dependiendo de quién envía por ejemplo
+gris (Emisor) y azul (Receptor).
+● Mostrar fecha hora de cada mensaje.
+● Realizar uso de localStorage o SessionStorage para mantener los mensajes
+guardados en caso de actualizar la ventana del navegador.
+Consideraciones:
+● Tener presente los principios SOLID para el desarrollo respectivo.
+● Implementar la arquitectura que mejor considere e indicar la razón respecto de su
+uso a los patrones utilizados (Creacionales, Estructurales y de Comportamiento).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Env Variables -->
+### :key: Variables de entorno
 
-### `npm run build`
+Para correr este projecto es necesario tener disponible puertos `3000, 3001`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`API_KEY` = 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Getting Started -->
+## 	:toolbox: Antes de empezar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Un poco de como diseñe esta solucion.
 
-### `npm run eject`
+La logica que utilice: `necesito un chat para hablar con otros usuarios en tiempo real.`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 	:toolbox: Usuarios de prueba
+```bash
+ test 123456 
+ test2 123456
+ marta 123456
+ pablo 123456
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- Installation -->
+### :gear: Requisitos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Este projecto maneja NPM como gestor de paquetes. 
+Por favor ejecute los siguientes comandos.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+ npm install 
+ npm run build
+ npm run start 
+```
 
-## Learn More
+<!-- Deploy -->
+### 🌧️ Despliegue en servidor remoto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Se uso una maquina virtual de la cloud de Azure para subir el projecto y se mantiene activo con PM2 en la ruta.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`http://appchatroom.brazilsouth.cloudapp.azure.com:3000/`
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<b>!!estará disponible hasta recibir el feedback!!</b>
